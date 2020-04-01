@@ -10,9 +10,9 @@
   <packaging>pom</packaging>
   <description>父工程,统一管理jar包版本</description>
 
-<!--  <modules>-->
-<!--    <module>cloud-provider-payment8001</module>-->
-<!--  </modules>-->
+  <modules>
+    <module>cloud-provider-payment8001</module>
+  </modules>
 
   <!--统一管理jar包版本-->
   <properties>
