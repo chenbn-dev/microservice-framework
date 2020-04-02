@@ -1,0 +1,10 @@
+要完整跑通所有的微服务，请参考该文档。
+
+构建一个模块的固定步骤：1.建modle；2.修改pom.xml；3.添加yml；4.建主启动类；5.建业务类
+
+1.第一个模块：cloud-provider-payment8001（注意数据库库名和账号密码配置。）（业务类细节，请参考各类型文件注释）。
+  启动 PaymentMain8001 主启动类，测试get查询方法和post插入数据方法：
+  get请求地址： http://localhost:8001/payment/get/1          （注意，数据库要插入1号数据）
+  post请求地址：http://localhost:8001/payment/create?serial=chbn002  （postman测试地址）
+
+2.第二个模块：cloud-consumer-order80
