@@ -1,4 +1,5 @@
 # Project exclude paths
+*.iml
 /cloud-consumer-order80/target/
 /cloud-provider-payment8001/target/
-*.iml
+/cloud-api-commons/target/
