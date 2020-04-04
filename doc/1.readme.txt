@@ -32,6 +32,8 @@
 4.新建eureka server类：cloud-eureka-server7001，服务注册中心，主要就是注册，不需要在写业务类，注意标明@EnableEurekaServer注解，表示
   该类是一个eureka server。
   启动该模块组启动类，访问：localhost:7001
+  将cloud-provider-payment8001注册进EurekaServer；将cloud-consumer-order80注册进EurekaSrever
+
 
 
 
