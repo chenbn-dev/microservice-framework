@@ -1,8 +1,8 @@
 server:
-  port: 7003
+  port: 7005
 eureka:
   instance:
-    hostname: eureka7003.com
+    hostname: eureka7005.com
     #lease-renewal-interval-in-seconds: 1
     #lease-expiration-duration-in-seconds: 2
   #server:
@@ -12,4 +12,4 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7004.com:7004/eureka/,http://eureka7005.com:7005/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/,http://eureka7004.com:7004/eureka/
