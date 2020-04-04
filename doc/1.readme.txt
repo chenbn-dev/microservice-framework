@@ -34,7 +34,9 @@
   启动该模块组启动类，访问：localhost:7001
   将cloud-provider-payment8001注册进EurekaServer；将cloud-consumer-order80注册进EurekaSrever
 
-
+5.新建cloud-eureka-server7002，cloud-eureka-server7003，cloud-eureka-server7004服务，搭建Eureka集群。
+  pom.xml添加依赖，添加application.yml配置文件，hosts文件做端口映射，模拟集群环境，相继启动4个服务，
+  逐一访问"http://eureka7002.com:7002/"这4个服务，看集群是否搭建成功。 
 
 
 

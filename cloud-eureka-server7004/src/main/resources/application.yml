@@ -1,10 +1,10 @@
 server:
-  port: 7001
+  port: 7004
 eureka:
   instance:
     # eureka服务端的实例名称
     # 单机 hostname: localhost
-    hostname: eureka7001.com
+    hostname: eureka7004.com
     # Eureka客户端向服务端发送心跳的时间间隔,单位为秒(默认是30秒)
     #lease-renewal-interval-in-seconds: 1
     # Eureka服务端在收到最后一次心跳后等待时间上限 ,单位为秒(默认是90秒),超时剔除服务
@@ -22,4 +22,4 @@ eureka:
       # 设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址
       # 单机 defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
       # 相互注册
-      defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/,http://eureka7004.com:7004/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
