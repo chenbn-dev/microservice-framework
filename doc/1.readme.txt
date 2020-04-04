@@ -37,9 +37,12 @@
 5.新建cloud-eureka-server7002，cloud-eureka-server7003，cloud-eureka-server7004服务，搭建Eureka集群。
   pom.xml添加依赖，添加application.yml配置文件，hosts文件做端口映射，模拟集群环境，相继启动4个服务，
   逐一访问"http://eureka7002.com:7002/"这4个服务，看集群是否搭建成功。
-6.配置8001和80的yml文件，将8001和80连个微服务，注册进eureka集群。
 
+6.配置8001和80的yml文件，将8001和80两个微服务，注册进eureka集群。
 
+7.搭建服务提供者集群，然后修改端口8001——8005逐一测试服务提供者是否正常：" http://localhost:8001/payment/get/1 "，如果所有服务提供
+  者服务全部能正常提供服务，则将消费者80默认访问地址"http://localhost:8001"改为服务提供者集群名称"http://cloud-payment-service",
+  并在消费者80的配置类中添加"@LoadBalanced"注解，以提供默认的负载均衡功能，测试通过Eureka集群服务提供者是否能够为消费者80，提供正常的服务"http://localhost/consumer/payment/get/1"。
 
 
 
