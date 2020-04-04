@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.chenbonian.springcloud.dao.PaymentDao">
+
+    <!--
+        id：对应PaymentDao接口中的方法名
+        parameterType：参数类型，该处我们传的就是Paymet实体类，在application.yml文件中配了所有Entity别名类所在包的映射，
+                       所以实体类都会去entities包下面找
+        Java后台干活用的是实体类（Payment），对外交互传的是CommonResult
+        useGeneratedKeys：数据库插入成功，会返回一个数字，数字大于零，说明插入成功，否则插入失败，代表有返回值
+        keyProperty：主键
+    -->
+    <insert id="create" parameterType="Payment" useGeneratedKeys="true" keyProperty="id">
+        insert into payment(serial) values (#{serial});
+    </insert>
+
+
+    <!--
+        resultType：直接写实体类
+        resultMap：结果集映射，防止有人命名不规范等问题
+    -->
+    <select id="getPaymentById" parameterType="Long" resultMap="BaseResultMap">
+        select * from payment where id=#{id};
+    </select>
+    <!--
+        type：要映射的实体类
+        按id查询的resultMap的结果集映射
+    -->
+    <resultMap id="BaseResultMap" type="cn.chenbonian.springcloud.entities.Payment">
+        <!-- 实现字段的一一映射 columu：数据库的字段名  property：Java中实体entities中的属性名称 -->
+        <id column="id" property="id" jdbcType="BIGINT" /><!-- id的映射 -->
+        <id column="serial" property="serial" jdbcType="VARCHAR" />
+    </resultMap>
+</mapper>
+
