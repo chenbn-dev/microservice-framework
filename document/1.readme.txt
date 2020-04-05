@@ -83,6 +83,7 @@
    的这个配置类就会被所有的Ribbon客户端共享，达不到特殊化定制的目的。
 
 17.OpenFeign：Feign就是一个服务接口绑定器，接口+注解的形式。
+   新建"cloud-consumer-feign-order80"，并完成OpenFeign的编码和调用
 
 
 
