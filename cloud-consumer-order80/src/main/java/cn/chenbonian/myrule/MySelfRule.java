@@ -19,4 +19,3 @@ public class MySelfRule {
         return new RandomRule();
     }
 }
- 
