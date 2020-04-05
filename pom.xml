@@ -27,6 +27,7 @@
     <module>cloud-provider-payment8005</module>
     <module>cloud-provider-payment8006</module>
     <module>cloud-providerconsul-payment8007</module>
+      <module>cloud-consumer-feign-order80</module>
 
   </modules>
 
