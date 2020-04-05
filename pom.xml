@@ -13,6 +13,8 @@
   <modules>
     <module>cloud-api-commons</module>
     <module>cloud-consumer-order80</module>
+    <module>cloud-consumerzk-order80</module>
+    <module>cloud-consumerconsul-order80</module>
     <module>cloud-eureka-server7001</module>
     <module>cloud-eureka-server7002</module>
     <module>cloud-eureka-server7003</module>
@@ -24,7 +26,8 @@
     <module>cloud-provider-payment8004</module>
     <module>cloud-provider-payment8005</module>
     <module>cloud-provider-payment8006</module>
-    <module>cloud-consumerzk-order80</module>
+    <module>cloud-providerconsul-payment8007</module>
+
   </modules>
 
   <!--统一管理jar包版本-->

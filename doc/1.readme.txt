@@ -56,7 +56,10 @@
    注意zookeeper的jar包冲突，zookeeper自己带的版本和服务器上安装的版本不一样。在8006的pom文件中，先排除自带版本，在引入和服务器一样的版本。
    zookeeper不会像Eureka有自我保护机制，当在一定时间片内收不到某个服务的心跳之后，会直接将该服务信息清除。
    当该服务再次接入时，zookeeper会生成新的流水号，说明zookeeper的服务结点是临时节点。
-   CAP理论中的AP和CP
+   CAP理论中的AP和CP，zookeeper注重CP。
+
+12.官网下载consol客户端并解压consul.exe可执行文件，在控制住台执行"consul agent -dev"启动consol，并通过"localhost:8500"，
+   看到consol的界面，此时就代表服务注册中心consol安装并运行成功。
 
 
 

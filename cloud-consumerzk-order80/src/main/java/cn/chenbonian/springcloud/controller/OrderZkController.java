@@ -11,9 +11,8 @@ import javax.annotation.Resource;
  * @author chbn
  * @create 2020-04-05 11:33
  */
-
-@RestController
 @Slf4j
+@RestController
 public class OrderZkController {
 
     public static final String INVOKE_URL = "http://cloud-provider-payment";
