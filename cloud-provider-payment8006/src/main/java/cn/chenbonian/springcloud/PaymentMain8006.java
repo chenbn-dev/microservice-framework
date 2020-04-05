@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
+ * 向zookeeper中注册的服务提供者主启动类
  * @author chbn
  * @create 2020-04-05 10:03
  */
