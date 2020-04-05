@@ -1,4 +1,4 @@
-package cn.chenbonian.springcloud.config;
+package cn.chenbonian.springcloud.configbeans;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

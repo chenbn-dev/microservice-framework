@@ -1,4 +1,4 @@
-package cn.chenbonian.springcloud.config;
+package cn.chenbonian.springcloud.configbeans;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
