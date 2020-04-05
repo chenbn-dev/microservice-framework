@@ -60,7 +60,24 @@
 
 12.官网下载consol客户端并解压consul.exe可执行文件，在控制住台执行"consul agent -dev"启动consol，并通过"localhost:8500"，
    看到consol的界面，此时就代表服务注册中心consol安装并运行成功。
+13.新建向consol中注册的服务提供者模块"cloud-providerconsul-payment8007", 启动8007主启动类，看consol的服务端图形界面是否出现新
+   注册的服务名，并通过"http://localhost:8007/payment/consul"访问，服务是否可以访问。
+14.新建向consol中注册的服务消费者模块"cloud-consumerconsul-order80",启动80主启动类，看consol的服务端图形界面是否出现新
+   注册的服务名，并通过"http://localhost/consumer/payment/consul"访问，服务是否可以访问。
 
+15.Eureka，zookeeper，consul三个注册中心异同点：
+   Eureka是AP，主要保证A高可用；而zookeeper，consul注重的是CP，主要保证C数据一致性。
+
+   CAP理论：C（强一致）；A（高可用）；P（分区容错性）。
+   分区容忍性：分布式系统在遇到任何网络分区故障的时候，仍然能够保证对外提供满足一致性和可用性的服务，除非是整个网络环境都发生了故障。
+              （系统部分节点出现故障后，连接正常节点还可以使用系统提供的服务）。
+   一致性：读操作总是能读取到之前完成的写操作结果，满足这个条件的系统称为强一致系统，这里的“之前”一般对同一个客户端而言；
+   可用性：读写操作在单台机器发生故障的情况下仍然能够正常执行，而不需要等待发生故障的机器重启或者其上的服务迁移到其他机器；
+   分区可容忍性：机器故障、网络故障、机房停电等异常情况下仍然能够满足一致性和可用性。
+   原文链接：https://blog.csdn.net/zhangyufeijiangxi/article/details/78286364
+
+   由于现在分布式微服务架构，P永远都要保证，所以，分布式系统要么是CP，要么是AP；
+   Eureka的自我保护机制强调的是AP，保证微服务的高可用
 
 
 
