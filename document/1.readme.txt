@@ -107,7 +107,8 @@
    服务限流：flowlimit，高并发限流
 
 19.利用hystrix为服务提供端和服务消费端配置服务降级。
-   解决代码膨胀问题，
+   解决服务降价的方法重复导致的代码冗余问题；
+   重新新建一个类(PaymentFallbackService)实现PaymentHystrixService接口,统一为接口里面的方法进行异常处理。
 
 
 
