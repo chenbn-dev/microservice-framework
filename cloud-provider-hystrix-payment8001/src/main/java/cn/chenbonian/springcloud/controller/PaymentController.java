@@ -45,7 +45,20 @@ public class PaymentController {
         String result = paymentService.paymentInfo_TimeOut(id);
         log.info("*****result:" + result);
         return result;
+    }
 
+    // ——————————————————————————————————————————— 服务熔断 ————————————————————————————————————————————
+    /**
+     * 服务熔断
+     * http://localhost:8001/payment/circuit/12
+     * @param id
+     * @return
+     */
+    @GetMapping("/payment/circuit/{id}")
+    public String paymentCircuitBreaker(@PathVariable("id") Integer id) {
+        String result = paymentService.paymentCircuitBreaker(id);
+        log.info("***result:" + result);
+        return result;
     }
 }
 
