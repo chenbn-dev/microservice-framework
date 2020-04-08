@@ -109,7 +109,7 @@
 19.利用hystrix为服务提供端和服务消费端配置服务降级。
    解决服务降价的方法重复导致的代码冗余问题；
    重新新建一个类(PaymentFallbackService)实现PaymentHystrixService接口,统一为接口里面的方法进行异常处理。
-
+20.服务监控hystrixDashboard仪表盘配置。
 
 
 
