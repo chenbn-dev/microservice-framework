@@ -16,8 +16,8 @@ spring:
           uri: lb://cloud-payment-service
           predicates:
             - Path=/payment/get/** # 断言，路径相匹配的进行路由
-            #- After=2017-01-20T17:42:47.789-07:00[America/Denver]
-            #- Before=2017-01-20T17:42:47.789-07:00[America/Denver]
+            - After=2020-04-07T17:42:47.485+08:00[Asia/Shanghai] #这个时间之后该路由开始生效
+            #- Before=2017-01-20T17:42:47.485+08:00[Asia/Shanghai]
             #- Cookie=username,zzyy
             #- Header=X-Request-Id, \d+ #请求头要有X-Request-Id属性，并且值为正数
             #- Host=**.atguigu.com
