@@ -111,6 +111,7 @@
    重新新建一个类(PaymentFallbackService)实现PaymentHystrixService接口,统一为接口里面的方法进行异常处理。
 20.服务监控hystrixDashboard仪表盘配置。
 
+21.gateway路由映射配置及动态路由配置。
 
 
 
