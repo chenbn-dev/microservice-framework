@@ -113,6 +113,8 @@
 
 21.gateway路由映射配置及动态路由配置。Predicate和自定义过滤器Filter。
 
+22.SpringCloud Config 分布式配置中心相关
+
 
 
 

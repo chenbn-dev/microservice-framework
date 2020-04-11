@@ -1,0 +1,34 @@
+server:
+  port: 3344
+
+
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/chenbn-dev/microservice-framework-config.git
+          search-paths: # 搜索目录
+            - microservice-framework-config
+      label: master
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: guest
+#    password: guest
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/,http://eureka7004.com:7004/eureka/,http://eureka7005.com:7005/eureka/
+
+# 暴露bus刷新配置的端点
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "bus-refresh"
