@@ -117,6 +117,8 @@
 
 23.SpringCloud Stream消息驱动
 
+24.SpringCloud Sleuth分布式链路跟踪
+
 
 
 
