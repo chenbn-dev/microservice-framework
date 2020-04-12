@@ -113,11 +113,11 @@
 
 21.gateway路由映射配置及动态路由配置。Predicate和自定义过滤器Filter。
 
-22.SpringCloud Config 分布式配置中心相关
+22.SpringCloud Config 分布式配置中心相关。
 
-23.SpringCloud Stream消息驱动
+23.SpringCloud Stream消息驱动。
 
-24.SpringCloud Sleuth分布式链路跟踪
+24.SpringCloud Sleuth分布式链路跟踪。
 
 
 
