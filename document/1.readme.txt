@@ -119,7 +119,7 @@
 
 24.SpringCloud Sleuth分布式链路跟踪。
 
-
+25.搭建SpringCloudAlibaba单机nocas注册中心，服务提供者集群和服务消费模块。并测试通过。
 
 
 
