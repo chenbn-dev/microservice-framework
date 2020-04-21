@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/chenbn-dev/microservice-framework-config.git
+          uri: https://github.com/chenbn-dev/microservice-framework-config
           search-paths: # 搜索目录
             - microservice-framework-config
       label: master
